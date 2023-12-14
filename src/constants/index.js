@@ -6,6 +6,7 @@ export const projects = [
     project_name: "Innomate",
     desc: "Innomate Solution is at the forefront of innovation, providing financial institutions and businesses with a robust platform to manage, monitor, and optimize their ATM networks. Elevate your fintech capabilities with Innomate's user-friendly interface and advanced functionalities.",
     project_desc: "Innomate Solution is a cutting-edge fintech application developed by Innovative Private Limited, designed to offer comprehensive monitoring and execution capabilities for Automated Teller Machines (ATMs). This powerful solution provides real-time insights into the status of connected devices, offering a holistic view of transactional events and images captured by the ATMs.",
+    code: "https://www.linkedin.com/in/waqar-ahmed-tarar-337bab256/",
     img: "Innomate.JPG",
     tags: [
       {
@@ -459,6 +460,7 @@ export const projects = [
     desc: 'IEngage is a sophisticated web-based application meticulously crafted to simplify the complexities of campaign management systems. Developed with a user-centric approach, IEngage offers a seamless and intuitive interface, empowering users to efficiently manage various facets of their campaign strategies.',
     project_desc: "Innomate Solution is a cutting-edge fintech application developed by Innovative Private Limited, designed to offer comprehensive monitoring and execution capabilities for Automated Teller Machines (ATMs). This powerful solution provides real-time insights into the status of connected devices, offering a holistic view of transactional events and images captured by the ATMs.",
     img: "IEngage.JPG",
+    code: "https://www.linkedin.com/in/waqar-ahmed-tarar-337bab256/",
     tags: [
       {
         name: "C#",

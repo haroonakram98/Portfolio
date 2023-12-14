@@ -74,8 +74,8 @@ export default function Project() {
                               title={module.title}
                               desc={module.desc}
                               img={module.img}
-                              link={module.link}
-                              code={module.code}
+                              // link={module.link}
+                              // code={module.code}
                               tags={module.tags}
                             />
                         </div>

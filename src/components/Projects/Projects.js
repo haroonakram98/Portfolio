@@ -60,7 +60,7 @@ export default function Projects() {
                               title={project.project_name}
                               desc={project.desc}
                               img={project.img}
-                              link={project.link}
+                              // link={project.link}
                               code={project.code}
                               tags={project.tags}
                             />

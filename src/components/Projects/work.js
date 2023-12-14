@@ -19,7 +19,7 @@ export default function work({ title, desc, tags, link, code, img }) {
               className="w-full h-40 object-cover rounded-lg border border-secondary"
             />
             <div className="absolute inset-0 flex justify-end m-3 ">
-              <div
+              {link && (<div
                 onClick={() => window.open(link, "_blank")}
                 className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer mr-2"
               >
@@ -28,8 +28,8 @@ export default function work({ title, desc, tags, link, code, img }) {
                   alt={"gotosite"}
                   className="w-4/5 h-4/5 object-contain"
                 />
-              </div>
-              <div
+              </div>)}
+              {code && (<div
                 onClick={() => window.open(code, "_blank")}
                 className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer "
               >
@@ -38,7 +38,7 @@ export default function work({ title, desc, tags, link, code, img }) {
                   alt={"github"}
                   className="w-3/5 h-3/5 lg:w-4/5 lg:h-4/5 object-contain"
                 />
-              </div>
+              </div>)}
             </div>
           </div>
           <div className="mt-5">

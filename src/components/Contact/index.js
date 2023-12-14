@@ -217,7 +217,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                    "https://www.linkedin.com/in/waqar-ahmed-tarar-337bab256/",
                     "_blank"
                   )
                 }
