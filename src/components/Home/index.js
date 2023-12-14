@@ -1,6 +1,7 @@
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const stringSplitter = (string) => {
@@ -24,10 +25,10 @@ export default function Home() {
         <Typewriter
           options={{
             strings: [
-              "✋I'm Daniel Jebarson",
-              "I'm an enthusiast Full-Stack 🌐developer",
-              "I'm a 4th yr CSE 👨‍🎓 in VIT Vellore",
-              "You can 📲 me through discord or ✉️",
+              "✋I'm Waqar Tarar",
+              " I'm an enthusiast Full-Stack 🌐developer",
+              " I have 12+ years of experience in Web development",
+              " You can 📲 me through Discord or ✉️",
             ],
             delay: 150,
             pauseFor: 1500,
@@ -42,9 +43,10 @@ export default function Home() {
         data-aos="zoom-out-up"
         data-aos-delay="1400"
       >
-        <a href="#contact">Contact Me</a>
+        <Link to="contact">Contact Me</Link>
+        {/* <a href="#contact">Contact Me</a> */}
       </button>
-      <div
+      {/* <div
         className=" cursor-pointer w-fit left-[48%] lg:left-[62%] absolute bottom-16"
         data-aos="flip-up"
         data-aos-offset="20"
@@ -63,7 +65,7 @@ export default function Home() {
             <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
           </svg>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

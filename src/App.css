@@ -73,3 +73,8 @@
   pointer-events: none;
   mix-blend-mode: difference;
 }
+
+.slider-carosal{
+
+  width: 80%;
+}

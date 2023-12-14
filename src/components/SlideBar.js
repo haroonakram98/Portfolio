@@ -3,21 +3,41 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Slidebar() {
-  const [select, setSelect] = useState(0);
+  const sideBarSelected = {
+    0: "",
+    1: "about",
+    3: "projects",
+    4: "contact",
+  }
+  function getKeyByValue(value) {
+    return Object.keys(sideBarSelected).find(key => sideBarSelected[key] === value);
+  }
+  const [select, setSelect] = useState(parseInt(getKeyByValue(window.location.pathname.split("/")[1]),10));
+
+  console.log(select)
+
+  
+//   useEffect(() => {
+//     const selectedKey = parseInt(getKeyByValue(window.location.pathname.split("/")[1]),10)
+//     debugger  
+//     setSelect(selectedKey)
+// }, []);
+  
   return (
-    <div className="flex-none hidden lg:block  bg-black h-screen min-w-[25%] fixed ">
+    <div className="flex-none hidden lg:block   h-screen min-w-[5%] fixed ">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
         <div data-aos="slide-down">
           <img
-            src={require("../assets/images/MyImage.webp")}
-            alt="Daniel Jebarson"
+            src={require("../assets/images/coder-image.webp")}
+            alt="Waqar Tarar"
             className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
           />
           <h3 className="text-white name py-4 font-medium ">
-            Daniel Jebarson K
+            Waqar Tarar
           </h3>
         </div>
         <p
@@ -28,7 +48,7 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="200"
         >
-          <a href="/#">Home</a>
+          <Link to="">Home</Link>
         </p>
         <p
           onClick={() => setSelect(1)}
@@ -38,9 +58,9 @@ export default function Slidebar() {
           data-aos-delay="600"
           data-aos="slide-left"
         >
-          <a href="#about"> About Me</a>
+          <Link to="about"> About Me</Link>
         </p>
-        <p
+        {/* <p
           onClick={() => setSelect(2)}
           className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
             select === 2 ? "text-blue-600 " : ""
@@ -49,7 +69,7 @@ export default function Slidebar() {
           data-aos-delay="1000"
         >
           <a href="#resume">Resume</a>
-        </p>
+        </p> */}
         <p
           onClick={() => setSelect(3)}
           className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
@@ -58,7 +78,7 @@ export default function Slidebar() {
           data-aos="slide-left"
           data-aos-delay="1400"
         >
-          <a href="#projects">Projects</a>
+          <Link to="projects">Projects</Link>
         </p>
         <p
           onClick={() => setSelect(4)}
@@ -68,7 +88,7 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1800"
         >
-          <a href="#contact">Contact</a>
+          <Link to="contact">Contact</Link>
         </p>
       </div>
       <div

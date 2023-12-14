@@ -29,24 +29,22 @@ export default function About() {
             className="text-xl lg:text-3xl font-medium"
             data-aos={"fade-left"}
           >
-            I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
+            I'm <span className="text-yellow-600">Waqar Tarar,</span> a Web
             Enthusiast
+            
           </h3>
           <p
             className="pt-5 leading-7 text-slate-900 text-justify"
             data-aos={"fade-left"}
           >
-            I love playing music, reading comics and playing games. I am
-            currently pursuing BTech degree in VIT Vellore. I am {getDate()}{" "}
-            years old.I love exploring new technologies.
+            Greetings! I'm a seasoned professional with over 12+ years of dedicated experience in the dynamic realm of fintech software development. My journey in the fintech industry has been a continuous exploration of innovative solutions and a commitment to crafting technology that drives progress.
           </p>
           <p
             className="text-justify leading-7 text-slate-900"
             data-aos={"fade-right"}
           >
-            I am currently looking for jobs. I am also a discord bot developer.
-            I worked on reactJs, NextJs, TypeScript, Java and many more. I am
-            also looking to collaborate in open-source projects.
+            
+            My expertise lies in the intricate intersection of finance and technology, where I've honed my skills in developing cutting-edge applications that cater to the ever-evolving demands of the fintech landscape. Throughout my career, I've had the privilege of contributing to and leading the development of a diverse array of fintech applications.
           </p>
         </div>
 
@@ -68,7 +66,7 @@ export default function About() {
               style={{ width: "350px" }}
             />
           </div>
-          <button className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy">
+          {/* <button className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy">
             <a
               href={require("../../assets/files/Daniel Resume.pdf")}
               download={"Dani'sResume.pdf"}
@@ -76,7 +74,7 @@ export default function About() {
               Download CV
               <DownloadIcon />
             </a>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

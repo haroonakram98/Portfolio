@@ -25,6 +25,7 @@ export default function Contact() {
       process.env;
 
     const templateParams = {
+      toname: "Waqar Ahmad",
       username: username.value,
       email: email.value,
       message: message.value,
@@ -32,10 +33,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        REACT_APP_SERVICEID,
-        REACT_APP_TEMPLATE,
+        "service_8ivjsbn",
+        "template_2iqg6li",
         templateParams,
-        REACT_APP_PUBLICKEY
+        "PiETvzQAt8EPlv8uE"
       )
       .then(
         (response) => {
@@ -51,7 +52,6 @@ export default function Contact() {
             progress: undefined,
             theme: "colored",
           });
-          console.log("SUCCESS!", response.status, response.text);
         },
         (err) => {
           setLoading(false);
@@ -65,7 +65,6 @@ export default function Contact() {
             progress: undefined,
             theme: "colored",
           });
-          console.log("FAILED...", err);
         }
       );
   };
@@ -240,7 +239,7 @@ export default function Contact() {
             <div className="mt-6 italic text-sm font-medium text-blue-500 ">
               <span className=" pl-1 ">Copyright</span>
               <CopyrightIcon className="cursor-pointer mx-1" />
-              <span>2023 Daniel Jebarson K</span>
+              <span>2023 Waqar Tarar</span>
             </div>
           </div>
         </div>

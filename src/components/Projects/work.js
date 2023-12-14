@@ -1,5 +1,6 @@
 import Tilt from "react-parallax-tilt";
 export default function work({ title, desc, tags, link, code, img }) {
+  const imagePath = require(`../../assets/images/${img}`);
   return (
     <Tilt
       options={{
@@ -13,9 +14,9 @@ export default function work({ title, desc, tags, link, code, img }) {
         <div>
           <div className="relative w-full rounded-2xl">
             <img
-              src={img}
+              src={imagePath}
               alt={title}
-              className="w-full h-full max-h-[200px] min-h-[200px] rounded-[10px] object-cover border-[1px] border-secondary"
+              className="w-full h-40 object-cover rounded-lg border border-secondary"
             />
             <div className="absolute inset-0 flex justify-end m-3 ">
               <div
