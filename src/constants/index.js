@@ -52,7 +52,6 @@ export const projects = [
             desc: "The Event Monitoring  offers a comprehensive view of system events, allowing users to track and analyze critical occurrences within the fintech infrastructure. From transactional events to system alerts, this feature ensures proactive management and timely responses to potential issues.",
             carausalData: [
               {imgName: "projects/Innomate/Monitoring/Events.JPG", imgTitle: "Events"},
-              {imgName: "projects/Innomate/Monitoring/Events.JPG", imgTitle: "Events"},
             ],
           },
           {
@@ -61,8 +60,7 @@ export const projects = [
             image: ["projects/Innomate/Monitoring/deviceFail.JPG"],
             desc: "Device Fail Monitoring focuses on detecting and addressing device-related failures promptly. This  provides insights into hardware malfunctions, connectivity issues, or any other factors impacting the operational status of financial devices. Swift identification and resolution are paramount in maintaining uninterrupted services.",
             carausalData: [
-              {imgName: "projects/Innomate/Monitoring/deviceFail.JPG", imgTitle: "Events"},
-              {imgName: "projects/Innomate/Monitoring/Events.JPG", imgTitle: "Events"},
+              {imgName: "projects/Innomate/Monitoring/deviceFail.JPG", imgTitle: "Device Fail"},
             ],
           },
           {
@@ -71,19 +69,16 @@ export const projects = [
             image: ["monitoring/commands.JPG"],
             desc: "The Commands Monitoring  enables users to oversee and manage commands issued within the system. Whether it's initiating transactions, updates, or system configurations, this feature ensures visibility and control over command execution, contributing to efficient and secure operations.",
             carausalData: [
-              {imgName: "projects/Innomate/Monitoring/deviceFail.JPG", imgTitle: "Events"},
-              {imgName: "projects/Innomate/Monitoring/Events.JPG", imgTitle: "Events"},
+              // {imgName: "monitoring/commands.JPG", imgTitle: "Cpmmands"},
             ],
           },
           {
             id: 4,
             name: "Master Data",
-            image: ["monitoring/masterData.JPG"],
+            image: ["projects/Innomate/Monitoring/MasterData.JPG"],
             desc: "The Master Data Tracking  provides visibility into changes and updates made to master data within the system. Users can track modifications to critical information, ensuring data integrity, compliance, and facilitating comprehensive auditing. This feature is essential for maintaining accurate and up-to-date financial records.",
             carausalData: [
-              {imgName: "projects/IEngage/ProfileManagment/Profile.JPG", imgTitle: "Profile"},
-              {imgName: "projects/IEngage/ProfileManagment/Clone.JPG", imgTitle: "Profile Clone"},
-              {imgName: "projects/IEngage/ProfileManagment/DeleteProfile.JPG", imgTitle: "Delete Prfile"},
+              {imgName: "projects/Innomate/Monitoring/MasterData.JPG", imgTitle: "Master Data"},
             ],
           },
           {
@@ -92,9 +87,11 @@ export const projects = [
             image: ["monitoring/views.JPG"],
             desc: "The Views  allows users to access customized views of pertinent data within the fintech application. Users can tailor their perspectives based on specific criteria, enabling efficient monitoring of key metrics, reports, and essential information. This feature enhances user experience and facilitates quick decision-making.",
             carausalData: [
-              {imgName: "projects/IEngage/ProfileManagment/Profile.JPG", imgTitle: "Profile"},
-              {imgName: "projects/IEngage/ProfileManagment/Clone.JPG", imgTitle: "Profile Clone"},
-              {imgName: "projects/IEngage/ProfileManagment/DeleteProfile.JPG", imgTitle: "Delete Prfile"},
+              {imgName: "projects/Innomate/Monitoring/PieChart.JPG", imgTitle: "Pie Chart Views"},
+              {imgName: "projects/Innomate/Monitoring/Alert.JPG", imgTitle: "Alert View"},
+              {imgName: "projects/Innomate/Monitoring/ChessBoard.JPG", imgTitle: "Chess Board View"},
+              {imgName: "projects/Innomate/Monitoring/IncidentView.JPG", imgTitle: "Incident View"},
+              {imgName: "projects/Innomate/Monitoring/ATMUpTime.JPG", imgTitle: "ATM Up Time View"},
             ],
           },
         ]
@@ -194,42 +191,36 @@ export const projects = [
         link: "https://drive.google.com/file/d/1npEOuOhQh-1zRiLB9fFn-6ORTwd1gZkl/view",
         code: "https://github.com/daniel-jebarson/EXPLOITER",
         carausalData: [
-          {imgName: "jobs.webp", imgTitle: "Job Management"},
-          {imgName: "carousal/job management/events.webp", imgTitle: "Event"},
-          {imgName: "carousal/job management/piechart.webp", imgTitle: "Views"},
+          {imgName: "projects/Innomate/Scheduling/Jobs.JPG", imgTitle: "Jobs"},
+          {imgName: "projects/Innomate/Scheduling/JobExecution.JPG", imgTitle: "Job Execution"},
+          {imgName: "projects/Innomate/Scheduling/JobMonitoring.JPG", imgTitle: "Job Monitoring"},
         ],
         features: [
           {
             id: 1,
             name: "Job Management",
-            image: ["reports/cardCapture.JPG"],
+            image: ["projects/Innomate/Scheduling/Jobs.JPG"],
             desc: "Streamline and centralize the organization of tasks with a robust job management system. This  empowers users to efficiently create, modify, and prioritize tasks, ensuring a well-organized and prioritized schedule.",
             carausalData: [
-              {imgName: "projects/IEngage/ProfileManagment/Profile.JPG", imgTitle: "Profile"},
-              {imgName: "projects/IEngage/ProfileManagment/Clone.JPG", imgTitle: "Profile Clone"},
-              {imgName: "projects/IEngage/ProfileManagment/DeleteProfile.JPG", imgTitle: "Delete Prfile"},
+              {imgName: "projects/Innomate/Scheduling/Jobs.JPG", imgTitle: "Job Management"},
             ],
           },
           {
-            id: 1,
+            id: 2,
             name: "Job Monitoring",
-            image: ["reports/cardCapture.JPG"],
+            image: ["projects/Innomate/Scheduling/JobMonitoring.JPG"],
             desc: "Monitor the real-time progress and status of scheduled jobs with the Job Monitoring . Gain insights into the execution timeline, identify potential bottlenecks, and proactively address issues to maintain optimal operational efficiency.",
             carausalData: [
-              {imgName: "projects/IEngage/ProfileManagment/Profile.JPG", imgTitle: "Profile"},
-              {imgName: "projects/IEngage/ProfileManagment/Clone.JPG", imgTitle: "Profile Clone"},
-              {imgName: "projects/IEngage/ProfileManagment/DeleteProfile.JPG", imgTitle: "Delete Prfile"},
+              {imgName: "projects/Innomate/Scheduling/JobMonitoring.JPG", imgTitle: "Job Monitoring"},
             ],
           },
           {
-            id: 1,
+            id: 3,
             name: "Job Execution",
-            image: ["reports/cardCapture.JPG"],
+            image: ["projects/Innomate/Scheduling/JobExecution.JPG"],
             desc: "Ensure the flawless execution of scheduled tasks through the Job Execution . This feature allows for precise control over the initiation, pausing, and resumption of jobs, guaranteeing that critical processes are executed with precision.",
             carausalData: [
-              {imgName: "projects/IEngage/ProfileManagment/Profile.JPG", imgTitle: "Profile"},
-              {imgName: "projects/IEngage/ProfileManagment/Clone.JPG", imgTitle: "Profile Clone"},
-              {imgName: "projects/IEngage/ProfileManagment/DeleteProfile.JPG", imgTitle: "Delete Prfile"},
+              {imgName: "projects/Innomate/Scheduling/JobExecution.JPG", imgTitle: "Job Execution"},
             ],
           },
           
@@ -238,7 +229,7 @@ export const projects = [
       {
         title: "Report Management",
         desc: 'The Reports module stands as a cornerstone for comprehensive financial analytics. This multifaceted module offers a suite of s, each meticulously designed to address specific facets of financial operations. From capturing critical data related to card transactions in the "Card Capture"  to providing insights into cash-related activities through features like "Cassettes Counter," "Cash Outage Report," and "Cash Replenishment Report," the Reports module ensures a holistic view of financial processes.',
-        module_desc: 'In my portfolio, I showcase a dynamic user interface design that enhances user experience within a hierarchical system. Users can seamlessly navigate through a left pane displaying their assigned devices. Upon selecting a parent hierarchy, devices within that category are revealed. Choosing a specific device presents its name in the device ID box, accompanied by its current state prominently displayed above. Additionally, a detailed table illustrates the state of individual components of the selected device. For further insights, users can click on the "Events" button to access a comprehensive log of all events associated with the chosen device. Alternatively, they can explore job results or delve into master data to obtain in-depth physical details. On the right pane, users have the flexibility to create, view, or edit custom views, including Pie charts, Alert Views, and Incident Views. This dynamic interface not only streamlines device management but also offers a robust visualization toolset for comprehensive data analysis.',
+        module_desc: 'The Reports module stands as a cornerstone for comprehensive financial analytics. This multifaceted module offers a suite of s, each meticulously designed to address specific facets of financial operations. From capturing critical data related to card transactions in the "Card Capture"  to providing insights into cash-related activities through features like "Cassettes Counter," "Cash Outage Report," and "Cash Replenishment Report," the Reports module ensures a holistic view of financial processes.',
         tags: [
           {
             name: "Java",
